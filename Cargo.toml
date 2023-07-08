@@ -1,0 +1,10 @@
+[package]
+name = "steam_trader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+steam_interface = { path = "lib/steam_interface" }
+tokio = {version = "1.29.0", features = ["macros", "rt-multi-thread"]}
+reqwest = {version = "0.11.18", features = ["json"]}
+serde = {version = "1.0.167", features = ["derive"]}
